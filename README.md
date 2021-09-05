@@ -1,2 +1,1 @@
-# Weekly
-Weekly report
+# mkdocs-material-template
