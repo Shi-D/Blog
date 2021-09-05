@@ -60,7 +60,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   logo:
-    assets/favicon.ico
+    assets/break.ico
 
 docs_dir: docs
 
