@@ -1,16 +1,14 @@
 site_name: Mkdocs Material Template
-site_url: https://github.com/Dup4/mkdocs-material-template
-site_author: Dup4
+site_url: 
+site_author: Shi-d
 site_description: >-
   Mkdocs Material Template
 
 # Repository
-repo_name: Dup4/mkdocs-material-template
-repo_url: https://github.com/Dup4/mkdocs-material-template
 edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2021 Dup4
+copyright: Copyright &copy; 2021 Shi-d
 
 # Configuration
 theme:
@@ -61,7 +59,8 @@ theme:
 
   icon:
     repo: fontawesome/brands/github
-    logo: material/library
+  logo:
+    assets/favicon.ico
 
 docs_dir: docs
 
@@ -78,8 +77,8 @@ extra:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Dup4/mkdocs-material-template
+    # - icon: fontawesome/brands/github
+    #   link: https://github.com/???/mkdocs-material-template
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
