@@ -23,7 +23,7 @@ theme:
   include_search_page: false
   search_index_only: true
 
-  language: zh
+  language: en
 
   features:
     - header.autohide
