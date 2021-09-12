@@ -167,6 +167,12 @@ docs_dir: docs
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: 
+    - Getting Started: index.md
   - Weekly Report:
-    - Sept: weekly-report/sept/InfGCN.md
+    - Sept: 
+      - InfGCN: weekly-report/sept/InfGCN.md
+    - Oct: 
+      - SSS: weekly-report/oct/sss.md
+  - Note:
+    - Getting Started: note/index.md
