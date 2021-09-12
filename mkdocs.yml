@@ -170,7 +170,8 @@ nav:
   - Weekly Report:
     - Sept: 
       - InfGCN: weekly-report/sept/InfGCN.md
+      - DISCO: weekly-report/sept/DISCO.md
     - Oct: 
-      - SSS: weekly-report/oct/sss.md
+      - NONE: weekly-report/sept/DISCO.md
   - Note:
     - Getting Started: note/index.md
