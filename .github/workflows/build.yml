@@ -29,5 +29,12 @@ jobs:
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
-          mkdocs gh-deploy --force
-          mkdocs --version
+          mkdocs build
+
+      - name: Release
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: site # The folder the action should deploy.
+          clean: true # Automatically remove deleted files from the deploy branch
+          clean-exclude: CNAME

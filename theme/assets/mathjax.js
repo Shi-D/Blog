@@ -1,10 +1,4 @@
 window.MathJax = {
-  tex: {
-    tagSide: "right",
-    tagIndent: ".8em",
-    multlineWidth: "85%",
-    tags: "ams"
-  },
   options: {
     ignoreHtmlClass: 'tex2jax_ignore',
     processHtmlClass: 'tex2jax_process',

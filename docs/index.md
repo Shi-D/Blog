@@ -1,1 +1,1 @@
-# Mkdocs Material Template
+# Note
