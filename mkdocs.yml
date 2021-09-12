@@ -45,20 +45,20 @@ theme:
     # - navigation.tracking
 
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: light blue
-      accent: deep purple
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: cyan
-      accent: cyan
+      primary: teal
+      accent: teal
       toggle:
-        icon: material/weather-night
+        icon: material/toggle-switch
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
 
   font:
     text: Roboto
