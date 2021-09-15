@@ -14,6 +14,8 @@ copyright: Copyright &copy; 2021 Shiyd
 theme:
   name: material
   custom_dir: theme
+  favicon: assets/favicon.ico
+
 
   # Static files
   static_templates:
@@ -67,7 +69,7 @@ theme:
   icon:
     repo: fontawesome/brands/git-alt
   logo: 
-    assets/break.ico
+    assets/break.png
 
 # Plugins
 plugins:
@@ -106,7 +108,6 @@ markdown_extensions:
       toc_depth: 3
   - pymdownx.arithmatex:
   - pymdownx.betterem:
-      smart_enable: all
   - pymdownx.caret:
   - pymdownx.critic:
   - pymdownx.details:
@@ -168,10 +169,13 @@ nav:
   - Home: 
     - Getting Started: index.md
   - Weekly Report:
+    - Aug:
+      - Survey of GNN in CO: weekly-report/aug/Survey_GNN_CO.md
     - Sept: 
       - InfGCN: weekly-report/sept/InfGCN.md
       - DISCO: weekly-report/sept/DISCO.md
+      - DeepIS: weekly-report/sept/DeepIS.md
     - Oct: 
-      - NONE: weekly-report/sept/DISCO.md
+      - xxx
   - Note:
     - Getting Started: note/index.md

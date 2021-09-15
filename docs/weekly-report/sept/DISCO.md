@@ -1,5 +1,9 @@
 # DISCO: Influence Maximization Meets Network Embedding and Deep Learning
 
+> ==内容==: 强化学习 + Structure2Vec 解决影响力最大化问题
+
+> ==创新点==: 对大型社交网络的预处理、对动态网络的预处理、测试阶段直接取前 k 个节点而无需迭代选取
+
 ## 1 概要
   - 在学习阶段，使用深度强化学习技术将 σ(v, S) 近似为 σ̃(v, S; Θ)。
   - 对于每个潜在的种子，不是通过对扩散路径进行采样来估计其最大影响，而是通过学习映射函数直接预测其影响大小。

@@ -1,6 +1,6 @@
 # InfGCN: Identifying influential nodes in complex networks with graph convolutional networks
 
-使用图卷积网络识别复杂网络中的有影响力的节点
+> 使用图卷积网络识别复杂网络中的有影响力的节点
 
 ## 1 概要
 
