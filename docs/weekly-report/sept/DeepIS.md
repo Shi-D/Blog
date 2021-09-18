@@ -1,7 +1,6 @@
 # DeepIS: Susceptibility Estimation on Social Networks
 
-???+ Abstract "Abstract"
-    用 GNN 解决单个节点的敏感性估计（也可理解为单个节点被种子集 S 激活的概率）
+> 用 GNN 解决单个节点的敏感性估计（也可理解为单个节点被种子集 S 激活的概率）
 
 
 
