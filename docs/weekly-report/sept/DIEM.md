@@ -54,11 +54,12 @@ IC 模型中边概率为，$p_{uv} = (\gamma_1w_{uv} + \gamma_2sim(u, v) + \gamm
 
 $w_{uv}$ 联系频率，$sim(u, v)$ 用户相似性，$B^\tau_v$ 特定主题的权重，$\gamma_1, \gamma_2, \gamma_3$ 用于平衡三个指标之间的权重。
 
-> $B_v=[0.7, 0.3, 0.0] $              {<music,0.7>, <sport,0.3>, <politics,0.0>}
->
-> $B_u=[0.5, 0.3, 0.2]$              {<music,0.5>, <sport,0.3>, <politics,0.2>}
->
-> $sim(u, v)=\frac{B_vB_u}{\Vert B_v \Vert \Vert B_u \Vert}$  
+???+ example "Example"
+    $B_v=[0.7, 0.3, 0.0]$  {(music,0.7), (sport,0.3), (politics,0.0)}
+
+    $B_u=[0.5, 0.3, 0.2]$  {(music,0.5), (sport,0.3), (politics,0.2)}
+
+    $sim(u, v)=\frac{B_vB_u}{\Vert B_v \Vert \Vert B_u \Vert}$  
 
 
 
@@ -80,11 +81,12 @@ $u^{(t+1)}_v ← F(X_v , \{u^{(t)}_u\}_{u \in N(v)} , \{p(u, v)\}_{u \in N(v)} ;
 
 $X_v$ 为包含了有用的用户信息的向量，$X_v[0]$ 为节点是否为种子节点， $X_v$ 的剩余部分为各主题的权重。
 
-> eg.  节点 v 没被激活，且{<music,0.7>, <sport,0.3>, <politics,0.0>}，则$X_v=[0,0.7,0.3,0.0]$
+???+ example "Example" 
+    eg.  节点 v 没被激活，且{<music,0.7>, <sport,0.3>, <politics,0.0>}，则 $X_v=[0,0.7,0.3,0.0]$
 
 
 
-### 4.5 Deep Influence Evaluation Model ($\widehat{Q}$)
+### 4.5 Deep Influence Evaluation Model
 
 具体的嵌入定义如下，
 
