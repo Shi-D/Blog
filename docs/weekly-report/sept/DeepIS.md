@@ -98,11 +98,11 @@ $\widehat{𝒚}_𝑖 =𝑓_𝜃(𝑋[𝑖,:])$
 
 - IC 模型
 
-    $\widetilde{\zeta} = 1− \prod_{n_j \in N(n_𝑖) }(1−𝑃_{ji} \widetilde{\zeta})$
+    $\widetilde{\zeta}_i = 1− \prod_{n_j \in N(n_𝑖) }(1−𝑃_{ji} \widetilde{\zeta}_j)$
 
 - LT模型
 
-    $\widetilde{\zeta} = \sum_{n_j \in N(n_𝑖) }P_{ji} \widetilde{\zeta}$
+    $\widetilde{\zeta}_i = \sum_{n_j \in N(n_𝑖) }P_{ji} \widetilde{\zeta}_j$
 
 - 以 IC 模型为例，传播函数 $g(·)$ 即为
 
