@@ -216,9 +216,9 @@ $Loss=\underbrace{L_{MSE}}_{node\, lever\, error} + \underbrace{\lambda L_{MRSE}
 - 影响力延展度 (IS)
 
 
-## 5 实验结果
+## 6 实验结果
 
-### 5.1 随机种子的估计误差
+### 6.1 随机种子的估计误差
 
 > 随机选取种子集，用不同的对照算法计算单个节点的敏感性，再进行平均误差(ME)的对比。
 
@@ -233,7 +233,7 @@ $Loss=\underbrace{L_{MSE}}_{node\, lever\, error} + \underbrace{\lambda L_{MRSE}
 
 
 
-### 5.2 最高度种子的估计误差
+### 6.2 最高度种子的估计误差
 
 > 选取度值最高的 k 个节点作为种子集，用不同的对照算法计算单个节点的敏感性，再进行平均误差(ME)的对比。
 
@@ -245,7 +245,7 @@ $Loss=\underbrace{L_{MSE}}_{node\, lever\, error} + \underbrace{\lambda L_{MRSE}
 
 
 
-### 5.3 在 IM 算法中的效果
+### 6.3 在 IM 算法中的效果
 
 > 本组实验选取了 2 个传统 IM 算法 CELF 和 UBLF，将 DeepIS 和传统的蒙特卡洛估计 MC 作为传统算法的组件，来估计影响力延展度，并进行比较。
 
@@ -257,7 +257,7 @@ $Loss=\underbrace{L_{MSE}}_{node\, lever\, error} + \underbrace{\lambda L_{MRSE}
 
 
 
-### 5.4 传播阶段的重要性
+### 6.4 传播阶段的重要性
 > 第一排的图，横轴代表敏感性，纵轴代表具有相同值的节点数量。
 > 
 > 第二排的图，显示估计值和目标值之间的关系，横轴代表估计的易感概率，纵轴代表真实情况。每个散点都代表一个节点。
