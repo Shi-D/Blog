@@ -207,11 +207,11 @@ $Loss=\underbrace{L_{MSE}}_{node\, lever\, error} + \underbrace{\lambda L_{MRSE}
 
 ### 5.3 评价指标
 
-- 平均误差（ME）
+- 平均误差 (ME)
 
 - 总误差 (TE)
 
-- 运行时间（RT）
+- 运行时间 (RT)
 
 - 影响力延展度 (IS)
 
