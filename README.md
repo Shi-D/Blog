@@ -1,1 +1,1 @@
-# mkdocs-material-template
+# Blog
