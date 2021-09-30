@@ -179,4 +179,5 @@ nav:
     - Oct: 
       - SampleG: weekly-report/oct/SampleG.md
   - Note:
-    - Travel: note/travel/qingdao.md
+    - Travel:
+      - Qingdao: note/travel/qingdao.md
