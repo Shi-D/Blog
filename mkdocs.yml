@@ -179,5 +179,5 @@ nav:
     - Oct: 
       - SampleG: weekly-report/oct/SampleG.md
   - Note:
-    - Travel:
-      - Qingdao: note/travel/qingdao.md
+    - PaperList:
+      - LatestIMPaper: note/paperlist/Latest_IM_Papers.md
