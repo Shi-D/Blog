@@ -179,6 +179,7 @@ nav:
     - Oct: 
       - SampleG: weekly-report/oct/SampleG.md
       - MCIM: weekly-report/oct/MCIM.md
+      - DQN4Signed: weekly-report/oct/DQN4Signed.md
   - Note:
     - PaperList:
       - LatestIMPaper: note/paperlist/Latest_IM_Papers.md

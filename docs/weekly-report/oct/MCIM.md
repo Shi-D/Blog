@@ -1,6 +1,6 @@
 # Multi-Community Influence Maximization in Device-to-Device social networks
 
-> 多社交网络影响力最大化
+> 多社区网络的影响力最大化
 
 
 
@@ -96,7 +96,9 @@ $$
 
 该阶段的目标为，对单个社区内的节点进行排序。
 
-### 4.1 原始 LeaderRank
+### 4.1 LR
+
+> 原始 LeaderRank
 
 R^∗^(u) 是从 u 接收到内容的一组用户。 S^∗^(v) 是一组向 v 发送内容的用户。LR(t,v) 是用户 v 在第 t 次迭代中的得分。
 
@@ -110,7 +112,9 @@ $$
 
 
 
-### 4.2 带权重的 LeaderRank
+### 4.2 WLR
+
+> 带权重的 LeaderRank
 
 在 D2D 社区中，外链多于内链的用户会更积极地发送文件而不是接收文件。 因此，具有更多外链的用户将获得更高的分数。
 
@@ -147,7 +151,9 @@ $$
 
 
 
-### 4.3 带邻居和权重的 LeaderRank
+### 4.3 WLRN
+
+> 带邻居和权重的 LeaderRank
 
 用户的重要性不仅取决于自己，还取决于其多跳邻居，因此设计了带邻居和权重的 LeaderRank，即 WLRN
 
@@ -226,6 +232,11 @@ $$
 ## 6 最终算法
 
  <img src="../MCIM-7.png" alt="MCIM-7" style="zoom:20%;" />
+
+==bug==
+
+ <img src="../MCIM-15.png" alt="MCIM-15" style="zoom:30%;" />
+
 
 
 
