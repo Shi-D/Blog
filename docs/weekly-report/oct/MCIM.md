@@ -106,7 +106,7 @@ $$
 
 在 V 中有 n 个用户，在 E 中有 m 条边的社交图 G = (V,E)，我们向 G 中添加一个虚拟用户 u*，如下图，
 
-<img src="../MCIM-3.png" alt="MCIM-3" style="zoom:20%;" />
+<img src="../MCIM-3.png" alt="MCIM-3" style="zoom:18%;" />
 
 
 
@@ -194,7 +194,7 @@ $$
 
 <u>State-Value function</u>:  状态价值函数 $V_π(s) = E_π[∑_{i=0}^{\infty} γ^i r_i|s_0 = s]$，在策略 π 下，采取下一个 action 得到的奖励。也即，$V_π (s)$  为从 $\{G_i , G_{i+1} , ...\}$ 中选出的 $q$ 个种子用户所覆盖的预期用户数，$V_π (s = (i, q)) = f (∪^n_{j=i}S_j)$
 
-<img src="../MCIM-5.png" alt="MCIM-5" style="zoom:50%;" />
+<img src="../MCIM-5.png" alt="MCIM-5" style="zoom:25%;" />
 
 
 
@@ -235,11 +235,11 @@ $$
 
 数据集：使用现实的离线 D2D 共享数据集 Xen-der 和在线网络 Bitcoin-Alpha
 
-![MCIM-8](../MCIM-8.png)
+![MCIM-8](../MCIM-8.png){width=500}
 
 参数设置：
 
-![MCIM-9](../MCIM-9.png)
+![MCIM-9](../MCIM-9.png){width=500}
 
 
 
@@ -256,17 +256,19 @@ $$
 
 实验结果：
 
-<img src="../MCIM-10.png" alt="MCIM-10" style="zoom:50%;" />
+<img src="../MCIM-10.png" alt="MCIM-10" style="zoom:20%;" />
 
 ==2-hop 和 $\alpha = 0.1$ 时，能取得最优的传播覆盖率。== 
 
 ==考虑链接的权重和邻居的影响会导致更高的传播覆盖率。==
 
-<img src="../MCIM-11.png" alt="MCIM-11" style="zoom:50%;" />
+<img src="../MCIM-11.png" alt="MCIM-11" style="zoom:20%;" />
 
 ==和对照算法对比下，WLRN 能取得更好的解。==
 
-![MCIM-12](../MCIM-12.png)
+<img src="../MCIM-12.png" alt="MCIM-11" style="zoom:20%;" />
+
+
 
 1. ==WLRN 算法在平均覆盖率上最优。==
 2. ==随着种子用户数量的增加，一个种子用户平均能够覆盖的用户数量也在下降。==
@@ -276,24 +278,24 @@ $$
 
 **OBA 的对照算法：**
 
-1. Random: 分配给每个社区的预算是随机生成的
-2. Average :预算平均分配给每个社区
-3. Proportion :分配给每个社区的预算与社区规模成正比，越大的社区获得的预算越多
-4. Without allocation (WOA): 将 n 个社区视为一个大社区，不做任何分配，选择排名得分最高的用户
+1. Random : 分配给每个社区的预算是随机生成的
+2. Average : 预算平均分配给每个社区
+3. Proportion : 分配给每个社区的预算与社区规模成正比，越大的社区获得的预算越多
+4. Without allocation (WOA) : 将 n 个社区视为一个大社区，不做任何分配，选择排名得分最高的用户
 
 **WLRN + OBA 的对照算法：**
 
-1. CIM :社区检测和候选社区生成;第二步将规模大于平均社区规模的社区视为重要社区。种子用户从重要的 社区中选择
+1. CIM : 社区检测和候选社区生成；第二步将规模大于平均社区规模的社区视为重要社区。种子用户从重要的 社区中选择
 2. CoFIM : 它将社交网络中的信息扩散视为两个阶段:节点扩展和社区内传播，基于这样的扩散模型，定义了一 个影响评价函数，并使用贪婪方法来选择边际效应最大的用户
 3. MMIC : 它是一个在多社区多层网络中竞争的多重影响最大化扩散模型，模型还包含两个阶段: 找到 k 个最有 影响力的种子，并将 k 个种子公平地分配给 t 个不同的用户;使用 RRE 算法选择种子用户
 
 **实验结果：**
 
- <img src="../MCIM-13.png" alt="MCIM-13" style="zoom:30%;" />
+ <img src="../MCIM-13.png" alt="MCIM-13" style="zoom:25%;" />
 
 ==上表展示了不同算法组合的覆盖率，其中总预算，即种子用户数为 50。表明无论使用何种排序算法，所提出的 OBA 算法都达到了在所有比较的分配算法中覆盖率最高。==
 
- <img src="../MCIM-14.png" alt="MCIM-14" style="zoom:30%;" />
+ <img src="../MCIM-14.png" alt="MCIM-14" style="zoom:20%;" />
 
 ==由于 D2D 传播要求参与传播的双方在一定范围内，所以 D2D 传播具有很强的地域限制，这导致 D2D 社交网络社 区数量普遍较少，当种子节点数量达到一定数量(35个种子节点)时，算法的最大传播能力将受到限制。==
 
