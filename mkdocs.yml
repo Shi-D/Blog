@@ -181,6 +181,8 @@ nav:
       - MCIM: weekly-report/oct/MCIM.md
       - DQN4Signed: weekly-report/oct/DQN4Signed.md
       - RW Sample: weekly-report/oct/RW_Sample.md
+    - Nov:
+      - GLIE: weekly-report/nov/GLIE.md
   - Note:
     - PaperList:
       - LatestIMPaper: note/paperlist/Latest_IM_Papers.md
