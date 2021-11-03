@@ -77,6 +77,7 @@ U_t &= R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + ... \\
 $$
 
 <u>Action-Value function</u>:  动作价值函数，
+
 $$
 Q(s_t, a_t)= E[U_t|s_t,a_t]
 $$
@@ -92,22 +93,30 @@ $$
 ### 6.1 S2V-DQN
 
 NIPS '19
+
 $$
-\mu_v^{(t+1)} \leftarrow relu(\theta_1 x_v + \theta_2 \sum_{u \in N(v)} \mu_u^{t} + \theta_3 \sum_{u \in N(v)} relu(\theta_4w(v, u)))\\
-\Q'_n(h(S), v; \theta_Q) = \theta_5 relu([\theta_6 \sum_{v \in V} \mu_u^{(T)}, \theta_7 \mu_v^{(T)}])\\
+\begin{aligned}
+\mu_v^{(t+1)} \leftarrow relu(\theta_1 x_v + \theta_2 \sum_{u \in N(v)} \mu_u^{t} + \theta_3 \sum_{u \in N(v)} relu(\theta_4w(v, u))) \\
+Q'_n(h(S), v; \theta_Q) = \theta_5 relu([\theta_6 \sum_{v \in V} \mu_u^{(T)}, \theta_7 \mu_v^{(T)}]) \\
+\end{aligned}
 $$
-DIEM\DISCO
+
+DIEM、DISCO 均采样该种 Q 函数设计形式
 
 ### 6.2 GCOMB
 
 NIPS '20
+
 $$
+\begin{aligned}
 \mu_v = [score'(v), \ loc(v, S_t)]\\
 \mu_{C_t}=MAXPOOL\{\mu_v | v \in C_t\}\\
 \mu_{S_t}=MAXPOOL\{\mu_v | v \in S_t\}\\
 \mu_{C_t, S_t, v}=CONCAT(\theta_1·\mu_{C_t}, \theta_2·\mu_{S_t}, \theta_3·\mu_v)\\
-\Q'_n(S_t, v; \theta_Q) = \theta_4 ·\mu_{C_t, S_t, v}\\
+Q'_n(S_t, v; \theta_Q) = \theta_4 ·\mu_{C_t, S_t, v}\\
+\end{aligned}
 $$
+
 
 ### 6.3 GRIM
 
@@ -140,6 +149,7 @@ $Q(u,S,G)=ReLU(ReLU([\widehat{\sigma}_S, \widehat{\sigma}_s, O(S, s)] W_k)W_q)$
 2. 接近中心性
 
 3. 介数中心性
+
 4. 聚类系数
 
 GNN 监督学习节点 score 阶段，还可以有更多的设计，如粗粒度、细粒度预测。
@@ -167,11 +177,11 @@ $$
 
 1. d 跳邻居
 
-$(𝑃^𝑇 )^𝑑$ 表示从任意种子到任意目标节点的所有长度为 𝑑 的路径
+    $(𝑃^𝑇 )^𝑑$ 表示从任意种子到任意目标节点的所有长度为 𝑑 的路径
 
-$(𝑃^𝑇 )^𝑑 x$ 表示所有节点的 $d$ 步影响上界
+    $(𝑃^𝑇 )^𝑑 x$ 表示所有节点的 $d$ 步影响上界
 
-因此可以定义节点的特征矩阵为，$𝑋 = [𝒙,𝑃^𝑇𝒙,(𝑃^𝑇)^2𝒙...,(𝑃^𝑇)^𝑑𝒙]$
+    因此可以定义节点的特征矩阵为，$𝑋 = [𝒙,𝑃^𝑇𝒙,(𝑃^𝑇)^2𝒙...,(𝑃^𝑇)^𝑑𝒙]$
 
 2. 种子节点
 
