@@ -193,3 +193,4 @@ nav:
       - DIEM: subject/IMwithDRL/DIEM.md
       - Contingency: subject/IMwithDRL/Contingency.md
       - GCOMB: subject/IMwithDRL/GCOMB.md
+      - S2V-DQN: subject/IMwithDRL/S2V-DQN.md
