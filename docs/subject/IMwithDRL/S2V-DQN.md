@@ -27,7 +27,7 @@
   - **节点自身质量**，即 score‘ 值
   - **节点的位置**，即 2 个有较多重合邻居的节点都加入种子集大概率不是个好的选择，loc 值，$loc(v, S_t) = |N(v) \diagdown \bigcup_{\forall u \in S_t} N(u) |$
 - 候选节点集的**标签**为 ==$\mu_{C_t}$== $= MAXPOOL\{ \mu_v | v \in C_t\}$
-- 种子集的**标签**为 ==$\mu_{S_t}$== $ = MAXPOOL\{\mu_v|v \in S_t\}$
+- 种子集的**标签**为 ==$\mu_{S_t}$== $= MAXPOOL\{\mu_v|v \in S_t\}$
 - $\mu_{C_t, S_t, v} = CONCAT(\theta_1·\mu_{C_t}, \theta_2·\mu_{S_t}, \theta_3·\mu_v)$
 - $Q'_n(S_t, v; \theta_Q) = \theta_4 · \mu_{C_t, S_t, v}$
 
@@ -35,7 +35,7 @@
 
 - 由 S2V 训练得到的 p 维向量 $\mu_v^{(t+1)} \leftarrow relu(\theta_1 x_v + \theta_2 \sum_{u \in N(v)} \mu_u^{t} + \theta_3 \sum_{u \in N(v)} relu(\theta_4w(v, u)))$
 
-- concat 邻居节点和自身节点的 $\mu$ 值：$Q'_n(h(S), v; \theta_Q) = \theta_5 relu([\theta_6 \sum_{v \in V} \mu_u^{(T)}, \theta_7 \mu_v^{(T)}]) $
+- concat 邻居节点和自身节点的 $\mu$ 值：$Q'_n(h(S), v; \theta_Q) = \theta_5 relu([\theta_6 \sum_{v \in V} \mu_u^{(T)}, \theta_7 \mu_v^{(T)}])$
 
 ## 3 DQN
 

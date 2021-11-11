@@ -30,7 +30,7 @@
 
 ## 3 问题定义
 
-令 $\tau$ 表示查询的主题，$\sigma G(S|\tau)$ 即表示在该主题和种子集下的影响力延展度。
+令 $\tau$ 表示查询的主题，$\sigma_G(S|\tau)$ 即表示在该主题和种子集下的影响力延展度。
 
 目标函数即为，$𝜎_G(S^∗|𝜏) = argmax_{S⊆V∧|S|=k}𝜎_G(S|𝜏)$
 
@@ -65,7 +65,7 @@ $w_{uv}$ 联系频率，$sim(u, v)$ 用户相似性，$B^\tau_v$ 特定主题的
 
 ### 4.3 Topic‐Aware LT Model
 
-LT 模型中，阈值设置为 $\theta_v = 1 − \gamma_3B^𝜏_v $，边权重设置为 $b_{u,v} = (\gamma_1w_{uv} + \gamma_2sim(u, v))$
+LT 模型中，阈值设置为 $\theta_v = 1 − \gamma_3B^𝜏_v$，边权重设置为 $b_{u,v} = (\gamma_1w_{uv} + \gamma_2sim(u, v))$
 
 节点满足 $\sum_{u∈N_I(v)} B_{u,v} ≤ 1$ 即被激活。
 
