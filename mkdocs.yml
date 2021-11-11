@@ -189,8 +189,9 @@ nav:
       - LatestIMPaper: note/paperlist/Latest_IM_Papers.md
   - Subject:
     - IMwithRL:
-      - DISCO: subject/IMwithDRL/DISCO.md
-      - DIEM: subject/IMwithDRL/DIEM.md
-      - Contingency: subject/IMwithDRL/Contingency.md
-      - GCOMB: subject/IMwithDRL/GCOMB.md
       - S2V-DQN: subject/IMwithDRL/S2V-DQN.md
+      - GCOMB: subject/IMwithDRL/GCOMB.md
+      - DISCO: subject/IMwithDRL/DISCO.md
+      - Topic-Aware: subject/IMwithDRL/DIEM.md
+      - Contingency: subject/IMwithDRL/Contingency.md
+      - GRIM: subject/IMwithDRL/GRIM.md
