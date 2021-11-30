@@ -60,7 +60,7 @@ $$
 
 **数据集**：
 
- <img src="./TimeDiscounted-1.png" alt="TimeDiscounted-1" style="zoom:25%;" />
+ <img src="../TimeDiscounted-1.png" alt="TimeDiscounted-1" style="zoom:25%;" />
 
 **边概率**：
 
@@ -80,4 +80,4 @@ NetHEPT：恒定边缘概率 0.01
 
 **实验结果**：
 
- <img src="./TimeDiscounted-2.png" alt="TimeDiscounted-2" style="zoom:25%;" />
+ <img src="../TimeDiscounted-2.png" alt="TimeDiscounted-2" style="zoom:25%;" />
