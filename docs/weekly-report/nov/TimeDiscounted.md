@@ -20,10 +20,10 @@ Time-discounted influence maximization (TDIM) 时间折扣影响最大化
 
 ## 2 问题定义
 
-给定一个图 $G(V, E, P)$ 和预算 $k$，$\Delta T(u,S)$ 表示节点 $u$ 被种子集 $S$ 激活所需的时间，是一个随机变量，令 $\delta t(u,S)$ 作为 $\Delta T(u,S)$ 的一个实现。定义一个与 $\delta t$ 有关的==效用函数== $U$，使得，
+给定一个图 $G(V, E, P)$ 和预算 $k$，$\Delta T(u,S)$ 表示节点 $u$ 被种子集 $S$ 激活所需的时间，是一个随机变量，令 $\delta t(u,S)$ 作为 $\Delta T(u,S)$ 的一个实现。定义一个与 $\delta t$ 有关的 ==效用函数== $U$，使得，
+
 $$
 arg \max_S 􏰃\sum_{u∈V} E[U(∆T(u,S))] \\
-
 such \ that \ |S| = k
 $$
 
