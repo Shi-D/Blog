@@ -1,5 +1,13 @@
 # S2V-DQN vs GCOMB
 
+## 0 基本信息
+
+**Code**: 
+
+1. Pytorch, https://github.com/lzhan130/S2V-DQN_pytorch
+2. C++, https://github.com/K-Coconut/S2V-DQN/
+3. C++,  https://github.com/Hanjun-Dai/graph_comb_opt
+
 
 
 ## 1 训练流程

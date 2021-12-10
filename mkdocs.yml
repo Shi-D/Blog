@@ -186,6 +186,8 @@ nav:
       - DRL4IM: weekly-report/nov/DRL4IM.md
       - NoveltyDecay: weekly-report/nov/NoveltyDecay.md
       - TimeDiscounted: weekly-report/nov/TimeDiscounted.md
+    - Dec:
+      - GLIE: weekly-report/dec/N-Family.md
   - Note:
     - PaperList:
       - LatestIMPaper: note/paperlist/Latest_IM_Papers.md

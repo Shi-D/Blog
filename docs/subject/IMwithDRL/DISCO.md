@@ -18,22 +18,22 @@
     在应用 DQN 模型之前，我们首先用 Structure2vec 根据拓扑信息提取节点的特征。
 
     但是，原始的 Structure2vec 模型不能直接应用于 DQN。因此，提出如下的变体：
-
+    
     $x_v^{(i)}:=ReLU(\alpha_1 \sum_{v \in N(v)}x_u^{(i-1)}+\alpha_2 \sum_{v \in N(v)} ReLU(\alpha_3 w(v,u)) +\alpha_4a_v )$
-
+    
     评估每个节点的质量时，将具有最佳边际预期影响的节点添加到种子集 S 中：
-
+    
     $Q(v,S,Θ) := β_1^T ReLU([β_2 \sum_{v \in N(v)} x^I_u,β_3x^I_v])$   即为预估边际影响力
-
+    
     $Q(v', S, Θ) = argmax_{v∈\overline{S}}Q(v, S, Θ)$
 
 ???+ note "通过 DQN 进行模型训练"
     action：A 表示一个 action，每个 action 都会向当前种子集 S 添加一个节点 v 。用 v 的网络嵌入来表示一个动作。
 
     state：S 是当前状态。在 IM 问题中，用当前的种子集来表示状态 S，最终状态 Sk 表示已经被选中的 k 个节点。
-
+    
     reward：奖励 R 指对 action 进行评估的奖励。在将节点 v 添加到当前种子集后，状态从 S 变为 S‘。影响范围的增量是状态 S 中 v 节点的奖励，R(S, v) = σ(S’) − σ(S)。需要注意的是，学习的最终目标是最大化累积奖励$\sum_{i=1}^k R(S_i, v_i)$。
-
+    
     Q function：
     $Q(v,S,Θ) := β_1^T ReLU([β_2 \sum_{v \in N(v)} x^I_u,β_3x^I_v])$
 
@@ -46,11 +46,10 @@
 then $(Q_A −Q_B)(Q′_A −Q′_B)>0,CF=1$
 
 ==Proof of Theorem 1==:
-
 $$
-|(Q_A − Q_B ) − (Q^′_A − Q^′_B )| < η
-\\case 1: (Q_A − Q_B ) − (Q^′_A − Q^′_B ) < η
-\\case 2: (Q_A − Q_B ) − (Q^′_A − Q^′_B ) > η
+|(Q_A − Q_B ) − (Q^′_A − Q^′_B )| < η \\
+case 1: (Q_A − Q_B ) − (Q^′_A − Q^′_B ) < η \\
+case 2: (Q_A − Q_B ) − (Q^′_A − Q^′_B ) > η
 $$
 
 以 case1 为例，有

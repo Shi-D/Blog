@@ -12,7 +12,7 @@
 
 **会议**：UAI' 2021
 
-
+**Code**: Pytorch, https://github.com/Haipeng-Chen/RL4IM-Contingency
 
 ## 1 论文背景
 
@@ -137,7 +137,6 @@ $L(w) = \frac{1}{2} (\overline{Q} − Q)^2$
 如果预算没有用完，则根据其学习策略 $π(a_{t,b}|X_{t,b})$ 确定下一个要选择的种子，该策略是给定当前状态 $X_{t,b}$ 的可行 action 空间上的概率分布。
 
 如果该图的预算用完了，算法将选择下一个图进行训练，并且训练过程迭代直到 RL 策略达到收敛。
-
 
 
 
