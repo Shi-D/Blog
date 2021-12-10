@@ -58,7 +58,7 @@ $F_1(u) = MIIA(u,θ) ∪ MIOA(u,θ)$
 
 $F_2(u)= ∪_{w \in F_1(u)} F_1(w)$
 
- <img src="N-Family-1.png" style="zoom:30%;" />
+ <img src="./N-Family-1.png" style="zoom:30%;" />
 
 > 令 $θ = 0.07$
 >
@@ -116,7 +116,7 @@ $TIR = 1-IR \ ∪\ 2-IR\ ∪\ 3-IR\ ∪\ . . . until termination$
 
 ## 5 Updating the Seed Nodes
 
- <img src="N-Family-2.png" style="zoom:30%;" />
+ <img src="./N-Family-2.png" style="zoom:30%;" />
 
 
 
