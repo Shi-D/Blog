@@ -188,6 +188,7 @@ nav:
       - TimeDiscounted: weekly-report/nov/TimeDiscounted.md
     - Dec:
       - N-Family: weekly-report/dec/N-Family.md
+      - N-Family: weekly-report/dec/IMINFECTOR.md
   - Note:
     - PaperList:
       - LatestIMPaper: note/paperlist/Latest_IM_Papers.md
