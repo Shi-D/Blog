@@ -188,7 +188,8 @@ nav:
       - TimeDiscounted: weekly-report/nov/TimeDiscounted.md
     - Dec:
       - N-Family: weekly-report/dec/N-Family.md
-      - N-Family: weekly-report/dec/IMINFECTOR.md
+      - IMINFECTOR: weekly-report/dec/IMINFECTOR.md
+      - Inf2Vec: weekly-report/dec/Inf2Vec.md
   - Note:
     - PaperList:
       - LatestIMPaper: note/paperlist/Latest_IM_Papers.md
@@ -200,3 +201,6 @@ nav:
       - Topic-Aware: subject/IMwithDRL/DIEM.md
       - Contingency: subject/IMwithDRL/Contingency.md
       - GRIM: subject/IMwithDRL/GRIM.md
+    - DyEmbedding:
+      - DyREP: subject/DyEmbedding/DyREP.md
+      - DySAT: subject/DyEmbedding/DySAT.md
