@@ -202,6 +202,7 @@ nav:
       - Contingency: subject/IMwithDRL/Contingency.md
       - GRIM: subject/IMwithDRL/GRIM.md
     - DyEmbedding:
+      - Survey: subject/DyEmbedding/Survey.md
       - DyREP: subject/DyEmbedding/DyREP.md
       - DySAT: subject/DyEmbedding/DySAT.md
     - InfEstimate:
