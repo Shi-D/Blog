@@ -8,9 +8,7 @@
 
 ## 1 模型
 
-![4](/Users/shiyingdan/Downloads/4.png)
-
-
+![DySAT-1](./DySAT-1.png)
 
 ### 1.1 Structural Self-Attention 结构自注意
 

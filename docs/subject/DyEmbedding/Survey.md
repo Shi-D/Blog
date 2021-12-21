@@ -46,7 +46,7 @@
 
 时间依赖性是在嵌入生成的后期定义的。例如，可以使用包括 node2vec 和 DeepWalk 在内的方法独立地为每个图快照学习嵌入，然后，可以使用操作组合表示，从简单的向量连接到动态嵌入和正交变换，以在连续时间戳对齐嵌入向量。
 
-![Survey-1](/Users/shiyingdan/GitHub/Blog/docs/subject/DyEmbedding/Survey-1.png)
+![Survey-1](../Survey-1.png)
 
 
 
@@ -59,7 +59,7 @@
 扩散预测问题与时间随机游走有关，遵循这一目标的模型包括（i）DeepCas [57]，它使用 GRU 和注意力机制来预测级联的未来大小，（ii）DAN [104]，它利用前馈输出下一个受感染节点的概率分布神经网络和注意力机制，以及 (iii) Topo-LSTM [102]，使用 LSTM 来处理对扩散的时间依赖性。此外，杨等人。 [116] 使用 GRU、GCN 和 GraphSAGE 来预测下一个受影响的节点，并使用强化学习框架来预测级联大小。
 时间随机游走代表了一种更自然的处理动态连续图 [21, 73] 的方法，因为它不需要将图任何时间离散化为快照。正如我们所展示的，这也是解决扩散问题的理想方法。下表列出了时间随机游走方法，并指出了应用于每个快照的静态嵌入方法以及它们**如何更新随机游走和向量表示**。
 
-![Survey-1](/Users/shiyingdan/GitHub/Blog/docs/subject/DyEmbedding/Survey-2.png)
+![Survey-2](../Survey-2.png)
 
 
 
