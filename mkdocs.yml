@@ -204,3 +204,7 @@ nav:
     - DyEmbedding:
       - DyREP: subject/DyEmbedding/DyREP.md
       - DySAT: subject/DyEmbedding/DySAT.md
+    - InfEstimate:
+      - DeepIS: subject/InfEstimate/DeepIS.md
+      - IMINFECTOR: subject/InfEstimate/IMINFECTOR.md
+      - Inf2Vec: subject/InfEstimate/Inf2Vec.md
