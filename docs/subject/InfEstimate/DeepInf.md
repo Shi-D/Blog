@@ -122,7 +122,7 @@ $H^′ =g(Aggregatee(A_1(G)HW^⊤_1,···,A_K(G)HW^⊤_K􏰊)+b􏰊$
 
 **数据集**
 
- <img src="./DeepInf-2.png" alt="DeepInf-2" style="zoom:30%;" />
+ <img src="../DeepInf-2.png" alt="DeepInf-2" style="zoom:30%;" />
 
 **数据准备**
 
