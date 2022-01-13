@@ -76,6 +76,8 @@ Ou 是通过将 u 的 one-hot 向量与嵌入矩阵 O 相乘来检索的。
 ### 3.1 用影响力向量进行传播
 
 从网络导出的 DP 可以定义一个矩阵：
+
+
 $$
 D=
 \left[
@@ -98,7 +100,7 @@ $$
 
 CELF 的改变版本，相当于将 CELF 中 MC 模拟获取节点边际影响力部分，进行了替换，替换为本文用 INFECTOR 模型求得的候选节点对其余节点的**扩散概率**之和。每找到一个种子节点后，都会将该种子节点 s 影响到的节点 v 从别的候选节点中删除节点 v ，以此来体现“边际”的概念。
 
- <img src="/Users/shiyingdan/GitHub/Blog/docs/weekly-report/dec/IMINFECTOR-7.png" alt="IMINFECTOR-7" style="zoom:30%;" />
+ <img src="../IMINFECTOR-7.png" alt="IMINFECTOR-7" style="zoom:30%;" />
 
 
 
