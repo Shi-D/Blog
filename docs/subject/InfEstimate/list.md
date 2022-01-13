@@ -1,3 +1,5 @@
+# List
+
 1. **DyDiff-VAE: A Dynamic Variational Framework for Information Diffusion Prediction.** *Ruijie Wang, Zijie Huang, Shengzhong Liu, Huajie Shao, Dongxin Liu, Jinyang Li, Tianshi Wang, Dachun Sun, Shuochao Yao, Tarek Abdelzaher.* SIGIR 2021. [paper](https://dl.acm.org/doi/10.1145/3404835.3462934)
 2. **Information Diffusion Prediction via Dynamic Graph Neural Networks.** *Zongmai Cao; Kai Han; Jianfu Zhu.* CSCWD 2021. [paper](https://ieeexplore.ieee.org/document/9437653/authors#authors)
 3. **Neural Information Diffusion Prediction with Topic-Aware Attention Network.** *Hao Wang, Cheng Yang, Chuan Shi.* CIKM 2021. [paper](https://dl.acm.org/doi/10.1145/3459637.3482374) [code](https://github.com/BUPT-GAMMA/TAN)

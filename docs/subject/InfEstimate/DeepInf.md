@@ -18,7 +18,7 @@
 
 **r-neighbors**
 
-$\Gamma_v^r = \{u:d(u,v) \leq r\} $，其中 $d(u,v)$ 表示节点 uv之间的最短路径长度。
+$\Gamma_v^r = \{u:d(u,v) \leq r\}$，其中 $d(u,v)$ 表示节点 uv之间的最短路径长度。
 
 **r-ego network**
 
