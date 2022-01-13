@@ -4,7 +4,7 @@
 
 **Author**：Jiezhong Qiu, Jian Tang, Hao Ma, Yuxiao Dong, Kuansan Wang, and Jie Tang
 
-**Conference**：
+**Conference**：KDD' 18
 
 
 
