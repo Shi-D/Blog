@@ -1,13 +1,13 @@
 # List
 
 1. **DyDiff-VAE: A Dynamic Variational Framework for Information Diffusion Prediction.** *Ruijie Wang, Zijie Huang, Shengzhong Liu, Huajie Shao, Dongxin Liu, Jinyang Li, Tianshi Wang, Dachun Sun, Shuochao Yao, Tarek Abdelzaher.* SIGIR 2021. [paper](https://dl.acm.org/doi/10.1145/3404835.3462934)
-2. **Information Diffusion Prediction via Dynamic Graph Neural Networks.** *Zongmai Cao; Kai Han; Jianfu Zhu.* CSCWD 2021. [paper](https://ieeexplore.ieee.org/document/9437653/authors#authors)
+2. ~~**Information Diffusion Prediction via Dynamic Graph Neural Networks.**~~ *Zongmai Cao; Kai Han; Jianfu Zhu.* CSCWD 2021. [paper](https://ieeexplore.ieee.org/document/9437653/authors#authors)
 3. **Neural Information Diffusion Prediction with Topic-Aware Attention Network.** *Hao Wang, Cheng Yang, Chuan Shi.* CIKM 2021. [paper](https://dl.acm.org/doi/10.1145/3459637.3482374) [code](https://github.com/BUPT-GAMMA/TAN)
 4. **Joint Learning of User Representation with Diffusion Sequence and Network Structure.** *Zhitao Wang, Chengyao Chen, and Wenjie Li.* TKDE 2020. [paper](https://ieeexplore.ieee.org/document/9094385)
 5. **HID: Hierarchical Multiscale Representation Learning for Information Diffusion.** *Zhou Honglu, Shuyuan Xu, and Zouhui Fu.* IJCAI 2020. [paper](https://www.ijcai.org/Proceedings/2020/0468.pdf) [code](https://github.com/hongluzhou/HID)
 6. **Cascade-LSTM: Predicting Information Cascades using Deep Neural Networks.** *Sameera Horawalavithana, John Skvoretz, Adriana Iamnitchi.* arXiv 2020. [paper](https://arxiv.org/pdf/2004.12373.pdf)
 7. **Inf-VAE: A Variational Autoencoder Framework to Integrate Homophily and Influence in Diffusion Prediction.** *Aravind Sankar, Xinyang Zhang, Adit Krishnan, Jiawei Han.* WSDM 2020. [paper](https://arxiv.org/pdf/2001.00132.pdf) [code](https://github.com/aravindsankar28/Inf-VAE)
 8. **DyHGCN: A Dynamic Heterogeneous Graph Convolutional Network to Learn Users’ Dynamic Preferences for Information Diffusion Prediction.** *Chunyuan Yuan, Jiacheng Li, Wei Zhou, Yijun Lu, Xiaodan Zhang, and Songlin Hu.* ECMLPKDD 2020. [paper](https://arxiv.org/pdf/2006.05169.pdf)
-9. **Neural diffusion model for microscopic cascade study.** *Cheng Yang, Maosong Sun, Haoran Liu,Shiyi Han, Zhiyuan Liu, and Huanbo Luan.* TKDE 2019. [paper](https://arxiv.org/pdf/1812.08933.pdf)
+9. **~~Neural diffusion model for microscopic cascade study.~~** *Cheng Yang, Maosong Sun, Haoran Liu,Shiyi Han, Zhiyuan Liu, and Huanbo Luan.* TKDE 2019. [paper](https://arxiv.org/pdf/1812.08933.pdf)
 10. ~~**Inf2vec:Latent representation model for social influence embedding.**~~ *Shanshan Feng, Gao Cong, Arijit Khan,Xiucheng Li, Yong Liu, and Yeow Meng Chee.* ICDE 2018. [paper](https://ieeexplore.ieee.org/document/8509310)
 11. **~~DeepInf: Social Influence Prediction with Deep Learning~~.** *Jiezhong Qiu, Jian Tang, Hao Ma, Yuxiao Dong, Kuansan Wang, Jie Tang.* KDD 2018. [paper](https://arxiv.org/pdf/1807.05560.pdf) [code](https://github.com/xptree/DeepInf)
