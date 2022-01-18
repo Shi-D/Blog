@@ -211,3 +211,5 @@ nav:
       - IMINFECTOR: subject/InfEstimate/IMINFECTOR.md
       - Inf2Vec: subject/InfEstimate/Inf2Vec.md
       - DeepInf: subject/InfEstimate/DeepInf.md
+      - NDM: subject/InfEstimate/NDM.md
+      - DySTGNN: subject/InfEstimate/DySTGNN.md
