@@ -30,7 +30,7 @@
 
 ### 2.1 数据集
 
- <img src="./NDM-1.png" alt="NDM-1" style="zoom:25%;" />
+ <img src="../NDM-1.png" alt="NDM-1" style="zoom:25%;" />
 
 **Lastfm**
 
@@ -82,7 +82,7 @@
 
 将用户 u 的嵌入表示为 $emb(u) \in R^d$，其中 $d$ 是嵌入的维度。在模型中，两个用户的嵌入之间较大的内积表明用户之间的相关性更强。 通过将用户投影到相应的向量中，嵌入层作为模型的底层。
 
- <img src="./NDM-3.png" alt="NDM-3" style="zoom:35%;" />
+ <img src="../NDM-3.png" alt="NDM-3" style="zoom:35%;" />
 
 
 
