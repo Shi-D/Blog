@@ -214,3 +214,4 @@ nav:
       - NDM: subject/InfEstimate/NDM.md
       - DySTGNN: subject/InfEstimate/DySTGNN.md
       - Forest: subject/InfEstimate/Forest.md
+      - CoupledGNN: subject/InfEstimate/CoupledGNN.md
