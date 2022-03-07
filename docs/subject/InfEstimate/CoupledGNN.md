@@ -77,19 +77,26 @@ $AGGREGATE(*) = a_v^{(k)} = \sum_{u \in N(v)} InfluGate(r_u^{(k)}, r_v^{(k)})s_u
 $p_v \in R$ 是一个自激活参数，用于反映用户 $v$ 可能通过脱离跟随关系的方式被激活的概率，例如离线交流或浏览首页的热门列表。
 
 那么用于更新用户 $v$ 激活状态的 $COMBINE(*)$ 函数定义为邻域聚合与用户 $v$ 自身激活状态的加权和：
+
+
 $$
 COMBINE(*) = s_v^{(k+1)}=\begin{cases}
 1, \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \ \ \  v \in C^m_T \\
 \sigma(\mu_s^{(k)}s_v^{(k)} + \mu_a^{(k)}a_v^{(k)}) \quad  v \notin C^m_T \\ 
 \end{cases}
 $$
+
+
 节点的初始激活状态为：
+
+
 $$
 s_v^{(0)}=\begin{cases}
 1, \ \  v \in C^m_T \\
 0, \ \  v \notin C^m_T \\ 
 \end{cases}
 $$
+
 
 ## 3 Influence Graph Neural Network
 
@@ -113,15 +120,15 @@ $COMBINE(*) = r^{(k+1)} =σ(􏰀\zeta_r^{(k)}W^{(k)}r^{(k)}_v +\zeta_b^{(k)}b_v^
 
 经过 K 层图神经网络的**激活状态**（State GNN）和**影响表示**（Influence GNN）后，网络中每个用户的输出激活概率为 $s(K) \in [0,1]$，即状态图中最后 $v$ 层的输出神经网络。然后通过网络中所有用户的总和池机制获得要预测的流行度，即
 
-$\widehat{n}^{m}_{\infin} = 􏰉\sum_{u \in V} s^{(K)}_u$
+$\widehat{n}^{m}_{\infty} = 􏰉\sum_{u \in V} s^{(K)}_u$
 
 MRSE 损失函数为，$n^m_∞$ 是真是的最后的信息 $m$ 的流行度：
 
-$L_{MRSE}=\frac{1}{M} \sum_{m=1}^{M} (\frac{\widehat{n}^m_\infin - n^m_\infin}{n^m_\infin})^2$
+$L_{MRSE}=\frac{1}{M} \sum_{m=1}^{M} (\frac{\widehat{n}^m_\infty - n^m_\infty}{n^m_\infty})^2$
 
-正则化项，其中 $P$ 是参数集合，$\eta$ 和 $\lambda$ 都是超参数，$L_{user}$ 用户层面的交叉熵，$s_V^\infin$ 是每个用户真实的最后的激活状态值：
+正则化项，其中 $P$ 是参数集合，$\eta$ 和 $\lambda$ 都是超参数，$L_{user}$ 用户层面的交叉熵，$s_V^\infty$ 是每个用户真实的最后的激活状态值：
 
-$L_{Reg}=\eta \sum_{􏰈p \in P} ∥p∥_2 + \lambda L_{user}$， $L_{user} = \frac{1}{􏰈M} \sum_{m=1}^M􏰈 \frac{1}{|V|}􏰀 \sum_{v \in V} (s_v^\infin log\ s^{(K)}_v+(1−s_v^\infin )logs^{(K)}_v􏰁)$
+$L_{Reg}=\eta \sum_{􏰈p \in P} ∥p∥_2 + \lambda L_{user}$， $L_{user} = \frac{1}{􏰈M} \sum_{m=1}^M􏰈 \frac{1}{|V|}􏰀 \sum_{v \in V} (s_v^\infty log\ s^{(K)}_v+(1−s_v^\infty )logs^{(K)}_v􏰁)$
 
 为防止过拟合，对目标损失函数添加 L2 正则化和用户层面的交叉熵：
 
